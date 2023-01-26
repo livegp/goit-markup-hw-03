@@ -47,6 +47,10 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+}
+
 .logo {
   color: var(--color-accent);
   font-family: "Raleway", sans-serif;
@@ -62,15 +66,10 @@ ul {
 .logo-footer {
   color: var(--color-alt);
 }
-.nav-link.activ,
-.nav-link:hover,
-.address-link:hover,
-.work-subtitle:hover,
-.work-text:hover,
-.nav-link:focus,
-.address-link:focus,
-.work-subtitle:focus,
-.work-text:focus {
+.nav-link:is(:hover, :focus),
+.address-link:is(:hover, :focus),
+.work-subtitle:is(:hover, :focus),
+.work-text:is(:hover, :focus) {
   color: var(--color-active);
 }
 .nav-link {
@@ -154,14 +153,11 @@ ul {
 }
 .hero-btn,
 .hero-title,
-.work-btn:hover,
-.work-btn:focus {
+.work-btn:is(:hover, :focus) {
   color: var(--color-light);
 }
-.hero-btn:hover,
-.hero-btn:focus,
-.work-btn:hover,
-.work-btn:focus {
+.hero-btn:is(:hover, :focus),
+.work-btn:is(:hover, :focus) {
   background-color: var(--color-active);
 }
 .skills-subtitle,
