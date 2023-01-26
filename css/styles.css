@@ -23,17 +23,14 @@
   --font-size-normal: 16px;
   --font-size-small: 12px;
 }
-body {
-  background-color: var(--color-light);
-  color: var(--color-text-dark);
-  font-family: var(--font);
-  font-size: var(--font-size-normal);
-}
 a {
   text-decoration: none;
 }
 ul {
   list-style: none;
+}
+html {
+  box-sizing: border-box;
 }
 .hidden {
   position: absolute;
@@ -47,10 +44,16 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+body {
+  background-color: var(--color-light);
+  color: var(--color-text-dark);
+  font-family: var(--font);
+  font-size: var(--font-size-normal);
+}
 .container {
 }
-
+.section {
+}
 .logo {
   color: var(--color-accent);
   font-family: "Raleway", sans-serif;
