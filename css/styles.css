@@ -259,7 +259,8 @@ body {
 }
 /***************** PORTFOLIO ******************/
 .work {
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .work-list-btn {
   display: flex;
