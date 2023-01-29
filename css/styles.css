@@ -80,9 +80,6 @@ body {
   font-family: inherit;
   font-size: inherit;
 }
-/* .team-list {
-  background-color: var(--color-light);
-} */
 .nav-link,
 .address-link,
 .skills-text,
@@ -172,6 +169,7 @@ body {
 .work-subtitle {
   margin-bottom: 8px;
 }
+/***************** HOME ******************/
 /*=============== HEADER ===============*/
 .header {
   display: flex;
@@ -208,7 +206,8 @@ body {
 }
 /*=============== SKILLS ===============*/
 .skills {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .skills-list {
   display: flex;
@@ -219,7 +218,7 @@ body {
 }
 /*=============== DOING ===============*/
 .doing {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .doing-list {
   display: flex;
@@ -228,7 +227,8 @@ body {
 }
 /*=============== TEAM ===============*/
 .team {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
   margin-bottom: 72px;
@@ -250,12 +250,14 @@ body {
 /*=============== FOOTER ===============*/
 .footer {
   display: flex;
-  padding: 100px 864px 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 864px;
 }
 .footer-text {
   margin-top: 16px;
 }
-/****************** PORTFOLIO ******************/
+/***************** PORTFOLIO ******************/
 .work {
   padding: 96px 0;
 }
