@@ -159,7 +159,7 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.2;
 }
-
+/* POSITION */
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -177,8 +177,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
   border-bottom: 1px solid var(--color-text-light);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav-section {
   display: flex;
@@ -194,7 +195,6 @@ body {
 }
 /*=============== HERO ===============*/
 .hero {
-  height: 600px;
   padding: 188px 314px;
 }
 .hero-btn {
@@ -206,7 +206,6 @@ body {
 }
 /*=============== SKILLS ===============*/
 .skills {
-  height: 344px;
   padding: 120px 0;
 }
 .skills-list {
@@ -218,7 +217,6 @@ body {
 }
 /*=============== DOING ===============*/
 .doing {
-  height: 412px;
   margin-bottom: 120px;
 }
 .doing-list {
@@ -228,7 +226,6 @@ body {
 }
 /*=============== TEAM ===============*/
 .team {
-  height: 732px;
   padding: 120px 0;
 }
 .team-title {
@@ -240,8 +237,6 @@ body {
   align-items: flex-end;
 }
 .team-item {
-  width: 264px;
-  height: 380px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -252,10 +247,8 @@ body {
 }
 /*=============== FOOTER ===============*/
 .footer {
-  height: 310px;
   display: flex;
-  align-items: center;
-  padding-right: 864px;
+  padding: 100px 864px 100px 0;
 }
 .footer-text {
   margin-top: 16px;
@@ -283,7 +276,6 @@ body {
 }
 .work-item {
   margin: 24px 0;
-  /* padding: 24px 0; */
 }
 .work-content {
   padding: 32px 16px;
