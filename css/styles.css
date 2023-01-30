@@ -159,11 +159,14 @@ body {
 /* POSITION */
 .container {
   width: 1158px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.section {
+/* .section {
   padding: 0 15px;
-}
+} */
 .skills-subtitle,
 .team-subtitle,
 .work-subtitle {
@@ -171,7 +174,7 @@ body {
 }
 /***************** HOME ******************/
 /*=============== HEADER ===============*/
-.header {
+.header > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
