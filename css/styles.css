@@ -174,13 +174,15 @@ body {
 }
 /***************** HOME ******************/
 /*=============== HEADER ===============*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-text-light);
+}
 .header > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-text-light);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .nav-section {
   display: flex;
