@@ -23,6 +23,18 @@
   --font-size-normal: 16px;
   --font-size-small: 12px;
 }
+body {
+  background-color: var(--color-light);
+  color: var(--color-text-dark);
+  font-family: var(--font);
+  font-size: var(--font-size-normal);
+}
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .hidden {
   position: absolute;
   width: 1px;
@@ -35,12 +47,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-body {
-  background-color: var(--color-light);
-  color: var(--color-text-dark);
-  font-family: var(--font);
-  font-size: var(--font-size-normal);
-}
 .logo {
   color: var(--color-accent);
   font-family: "Raleway", sans-serif;
@@ -50,35 +56,19 @@ body {
   line-height: 1.33;
   text-transform: uppercase;
 }
-.logo-header {
-  color: var(--color-dark);
-}
-.logo-footer {
-  color: var(--color-alt);
-}
 .nav-link:is(:hover, :focus),
 .address-link:is(:hover, :focus),
 .work-subtitle:is(:hover, :focus),
 .work-text:is(:hover, :focus) {
   color: var(--color-active);
 }
-.nav-link {
-  color: var(--color-dark);
-  font-weight: var(--font-medium);
-}
 .address-link,
 .work-text {
   color: var(--color-text-dark);
-  font-style: normal;
 }
 .hero,
 .footer {
   background-color: var(--color-dark);
-}
-.hero-btn,
-.work-btn {
-  font-family: inherit;
-  font-size: inherit;
 }
 .nav-link,
 .address-link,
@@ -114,29 +104,15 @@ body {
   line-height: 1.11;
   text-transform: capitalize;
 }
-.team {
-  background-color: var(--color-alt);
-}
 .team-subtitle,
 .team-text {
   text-align: center;
-}
-.footer-text {
-  color: var(--color-text-light);
-}
-.hero-btn {
-  background-color: var(--color-accent);
 }
 .hero-btn,
 .work-btn {
   font-weight: var(--font-medium);
   letter-spacing: 0.04em;
   line-height: 1.5;
-  cursor: pointer;
-}
-.work-btn {
-  background-color: var(--color-alt);
-  color: var(--color-accent);
 }
 .hero-btn,
 .hero-title,
@@ -150,27 +126,12 @@ body {
 .skills-subtitle,
 .team-subtitle,
 .work-subtitle {
+  margin-bottom: 8px;
   color: var(--color-dark);
   font-size: var(--font-size-h3);
   font-weight: var(--font-medium);
   letter-spacing: 0.02em;
   line-height: 1.2;
-}
-/* POSITION */
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-/* .section {
-  padding: 0 15px;
-} */
-.skills-subtitle,
-.team-subtitle,
-.work-subtitle {
-  margin-bottom: 8px;
 }
 /***************** HOME ******************/
 /*=============== HEADER ===============*/
@@ -184,6 +145,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.logo-header {
+  color: var(--color-dark);
+}
 .nav-section {
   display: flex;
   gap: 76px;
@@ -191,6 +155,10 @@ body {
 .nav {
   display: flex;
   gap: 40px;
+}
+.nav-link {
+  color: var(--color-dark);
+  font-weight: var(--font-medium);
 }
 .address {
   display: flex;
@@ -209,8 +177,9 @@ body {
   display: block;
   padding: 16px 32px;
   margin: 48px auto 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--color-accent);
 }
 /*=============== SKILLS ===============*/
 .skills {
@@ -239,6 +208,7 @@ body {
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: var(--color-alt);
 }
 .team-title {
   margin-bottom: 72px;
@@ -265,8 +235,12 @@ body {
 .footer-content {
   width: 264px;
 }
+.logo-footer {
+  color: var(--color-alt);
+}
 .footer-text {
   margin-top: 16px;
+  color: var(--color-text-light);
 }
 /***************** PORTFOLIO ******************/
 .work {
@@ -281,8 +255,10 @@ body {
 }
 .work-btn {
   padding: 12px 24px;
-  border: 1px solid var(--color-text-light);
   border-radius: 4px;
+  border: 1px solid var(--color-text-light);
+  background-color: var(--color-alt);
+  color: var(--color-accent);
 }
 .work-btn:is(:hover, :focus) {
   border: 1px solid var(--color-active);
@@ -307,6 +283,6 @@ body {
 }
 .work-content {
   padding: 32px 16px;
-  border: 1px solid var(--color-text-light);
   border-top: 0;
+  border: 1px solid var(--color-text-light);
 }
